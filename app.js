@@ -36,9 +36,9 @@ document.getElementById('supportForm').addEventListener('submit', function(e) {
     })
     .then(response => response.json())
     .then(data => {
-        alert('Email muvaffaqiyatli yuborildi!');
+        alert('Электронное письмо успешно отправлено!');
     })
     .catch((error) => {
-        console.error('Xatolik:', error);
+        console.error('Error:', error);
     });
 });
