@@ -24,7 +24,7 @@ document.getElementById('supportForm').addEventListener('submit', function(e) {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
 
-    fetch('https://sizning-server-url/email-endpoint', {
+    fetch('https://your-server-url/email-endpoint', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
