@@ -517,18 +517,43 @@
 
 .input {
     display: flex;
-    flex-direction: column;
     gap: 16px;
 }
 
 .input input {
-    width: 425px;
+    width: 100%;
     padding: 12px 16px 12px 16px;
     gap: 8px;
     border-radius: 8px;
     border: 1px;
     outline: none;
 }
+
+#styledTextarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    resize: vertical;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #styledTextarea:focus {
+    border-color: #3e8e41;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  #styledTextarea::placeholder {
+    color: #999;
+  }
+  
 
 .input input::placeholder {
     font-size: 16px;
@@ -660,6 +685,15 @@ footer {
         line-height: 25px;
         text-align: center;
     }
+
+    .input input::placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19.36px;
+        text-align: left;
+        color: #00000066;
+    }
+    
 
     .adv_i {
         max-width: 100%;

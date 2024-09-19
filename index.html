@@ -17,11 +17,10 @@
                     <div class="container">
                         <nav class="navbar">
                             <a href="#" class="head_l">
-                                <img src="./assets/icons/logo.svg" alt="favicon" class="logo">
+                                <img src="./assets/icons/logo.png" alt="favicon" class="logo">
                             </a>
                             <div class="navigate">
                                 <a href="#adv">Особенности </a>
-                                <a href="#otziv">Отзывы</a>
                                 <a href="#rabota">О приложении</a>
                                 <a href="#footer">Контакт</a>
                             </div>
@@ -36,7 +35,6 @@
                             <button class="close-btn" id="close-btn">&times;</button> <!-- X icon -->
                             <ul>
                               <li><a href="#adv">Особенности </a></li>
-                              <li><a href="#otziv">Отзывы</a></li>
                               <li><a href="#rabota">О приложении</a></li>
                               <li><a href="#footer">Контакт</a></li>
                             </ul>
@@ -175,11 +173,12 @@
                         <p>Мы всегда рады вашим отзывам и предложениям. Свяжитесь <br class="remove-on-mobile" /> с нами через форму ниже или по
                             электронной почте.</p>
                     </div>
-                    <form id="supportForm" class="support_r">
+                    <form id="contactForm" class="support_r">
                         <div class="input">
-                            <input type="text" id="name"  placeholder="Введите ф.и.о">
-                            <input type="email" id="email" placeholder="Введите адрес е-мейл">
+                            <input type="text" id="fullName" placeholder="Введите ф.и.о" required />
+                            <input type="email" id="email" placeholder="Введите адрес e-mail" required />
                         </div>
+                        <textarea name="" id="styledTextarea" rows="6" placeholder="Комментарий..."></textarea>
                         <button type="submit">Обращение</button>
                     </form>
                 </div>
@@ -197,9 +196,6 @@
                         Особенности
                     </a>
                     <a href="#">
-                        Отзывы
-                    </a>
-                    <a href="#">
                         О приложении
                     </a>
                     <div class="navigate_text">
@@ -211,5 +207,6 @@
         </div>
     </footer>
 </body>
-<script src="./app.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="./app.js" defer></script>
 </html>
